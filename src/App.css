@@ -2,18 +2,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
-#graphai {
+#graphai{ 
   position: relative;
   width: 1000px;
   height: 600px;
   margin: 20px auto;
 }
 
-.legend span {
+.legend span{ 
   font-size: 14px;
 }
 
-.legend div {
+.legend div{
   display: flex;
   align-items: center;
   margin-bottom: 10px;

@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 
-class Streamgraph extends Component {
-
-  componentDidUpdate(prevProps) {
+class Streamgraph extends Component{
+  componentDidUpdate(prevProps){
     if (this.props.data !== prevProps.data) {
       this.loadGraph(this.props.data);
     }
   }
 
-  loadGraph(data) {
+  loadGraph(data){
     const svg = d3.select("#streamgraph");
     svg.selectAll("*").remove(); 
     const height = 500;
@@ -76,8 +75,8 @@ class Streamgraph extends Component {
       .style("font-size", "12px").attr("fill", "#000"));
   }
 
-  render() {
-    return (
+  render(){
+    return(
       <div>
         <svg id="streamgraph" width="900" height="500"></svg>
         <div id="tooltip" className="tooltip"></div>
@@ -85,5 +84,5 @@ class Streamgraph extends Component {
     );
   }
 }
-
+ 
 export default Streamgraph;

@@ -11,7 +11,7 @@ class FileUpload extends Component {
   fileInput = (event) => {
     event.preventDefault();
     const { input } = this.state;
-  
+   
     if (input) {
       const rfile = new FileReader();
       rfile.onload = (e) => {

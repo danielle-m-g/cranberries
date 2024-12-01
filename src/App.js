@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import FileUpload from "./FileUpload";
 import Streamgraph from "./Graph";
-import "./App.css"; // Importing the updated CSS
+import "./App.css";
 
-function App() {
-  const [data, setData] = useState([]);
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {data: []};
+  }
 
-  return (
-    <div id="graphai">
-      <FileUpload setData={setData} />
-      {data.length > 0 && <Streamgraph data={data} />}
-    </div>
-  );
+  setData = (newData)=> {
+    this.setState({ data: newData });
+  };
+
+  render() {
+    const { data } =this.state;
+    return (
+      <div id="graphai">
+        <FileUpload setData={this.setData} />
+        {data.length > 0 && <Streamgraph data={data} />}
+      </div>
+    );
+  }
 }
-
+ 
 export default App;
