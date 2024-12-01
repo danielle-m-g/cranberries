@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#graphai {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.legend span {
+  font-size: 14px;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #eceaea;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
