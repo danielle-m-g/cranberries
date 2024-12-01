@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cranberries/static/css/main.19121fee.css",
+    "main.js": "/cranberries/static/js/main.259bb05c.js",
+    "index.html": "/cranberries/index.html",
+    "main.19121fee.css.map": "/cranberries/static/css/main.19121fee.css.map",
+    "main.259bb05c.js.map": "/cranberries/static/js/main.259bb05c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19121fee.css",
+    "static/js/main.259bb05c.js"
+  ]
+}
